@@ -22,7 +22,7 @@ function play() {
 }
 
 function next() {
-	if (currentSong < 4) {
+	if (currentSong < 6) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 	
@@ -79,6 +79,38 @@ function next() {
 			bg_img.src = "images/posters/marshmello_imagine.jpg";
 			main_img.src = "images/posters/marshmello_imagine.jpg";
 			song.src = "audios/songs/marshmello_imagine.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 5) {
+			song_name_text.innerHTML = "Elektronomia - Summersong 2018";
+			bg_img.src = "images/posters/elektronomia_summersong_2018.jpg";
+			main_img.src = "images/posters/elektronomia_summersong_2018.jpg";
+			song.src = "audios/songs/elektronomia_summersong_2018.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 6) {
+			song_name_text.innerHTML = "Glude - Breathe";
+			bg_img.src = "images/posters/glude_breathe.jpg";
+			main_img.src = "images/posters/glude_breathe.jpg";
+			song.src = "audios/songs/glude_breathe.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
@@ -152,6 +184,38 @@ function prev() {
 			song.src = "audios/songs/coopex_over_the_sun.mp3";
 			play_img.src = "images/player/pause.png";
 			
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 4) {
+			song_name_text.innerHTML = "Marshmello - Imagine";
+			bg_img.src = "images/posters/marshmello_imagine.jpg";
+			main_img.src = "images/posters/marshmello_imagine.jpg";
+			song.src = "audios/songs/marshmello_imagine.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 5) {
+			song_name_text.innerHTML = "Elektronomia - Summersong 2018";
+			bg_img.src = "images/posters/elektronomia_summersong_2018.jpg";
+			main_img.src = "images/posters/elektronomia_summersong_2018.jpg";
+			song.src = "audios/songs/elektronomia_summersong_2018.mp3";
+			play_img.src = "images/player/pause.png";
+
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 100 + "%";
