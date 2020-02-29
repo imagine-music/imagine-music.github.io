@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!--max_xon-music-->
+<html lang="en">
+  <head>
+    <title>max_xon-music | IMAGINE</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </head>
+  <body>
+    <div id="site_bar">
+      <p id="site_bar_text">ma<span id="site_bar_text_x">X_X</span>on-music | IMAGINE</p>
+    </div>
+    <div id="bg">
+      <img id="bg_img" src="images/posters/savoy_let_you_go.jpg" alt="bg_poster"/>
+    </div>
+    <div id="main">
+      <div id="main_post">
+        <img id="main_img" src="images/posters/savoy_let_you_go.jpg" alt="main_poster"/>
+      </div>
+      <div id="main_player">
+        <div id="song_name">
+          <p id="song_name_text">Savoy - Let You Go</p>
+        </div>
+        <div id="song_bar">
+          <div id="song_bar_progress">
+          </div>
+        </div>
+        <div id="butt_player">
+          <audio id="song" src="audios/songs/savoy_let_you_go.mp3"></audio>
+          <button id="prev" onclick="prev()">
+            <img id="prev_img" src="images/player/prev.png" alt="prev"/>
+          </button>
+          <button id="play" onclick="play()">
+            <img id="play_img" src="images/player/play.png" alt="play"/>
+          </button>
+          <button id="next" onclick="next()">
+            <img id="next_img" src="images/player/next.png" alt="next"/>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
