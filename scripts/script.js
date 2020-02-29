@@ -7,9 +7,6 @@ function play() {
 	if (play_pause == 1) {
 		song.play();
 		play_img.src = "images/player/pause.png";
-		main.style.animation = "fade 5s infinite";
-		site_bar.style.animation = "fade 5s infinite";
-		site_bar_text_x.style.animation = "x_x 2s infinite";
 
 		song.addEventListener("timeupdate", function() {
 		var position = song.currentTime / song.duration;
@@ -21,9 +18,6 @@ function play() {
 		play_pause = 0;
 		song.pause();
 		play_img.src = "images/player/play.png";
-		main.style.animation = "paused";
-		site_bar.style.animation = "paused";
-		site_bar_text_x.style.animation = "paused";
 	}
 }
 
@@ -31,9 +25,6 @@ function next() {
 	if (currentSong < 4) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
-		main.style.animation = "fade 5s infinite";
-		site_bar.style.animation = "fade 5s infinite";
-		site_bar_text_x.style.animation = "x_x 2s infinite";
 	
 		if (currentSong == 1) {
 			song_name_text.innerHTML = "Rogue - Badlands";
@@ -105,10 +96,7 @@ function prev() {
 	if (currentSong >= 1) {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
-		main.style.animation = "fade 5s infinite";
-		site_bar.style.animation = "fade 5s infinite";
-		site_bar_text_x.style.animation = "x_x 2s infinite";
-	
+		
 		if (currentSong == 0) {
 			song_name_text.innerHTML = "Savoy - Let You Go";
 			bg_img.src = "images/posters/savoy_let_you_go.jpg";
