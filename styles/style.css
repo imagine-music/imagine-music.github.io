@@ -17,7 +17,9 @@ body {
 	width: 100%;
 	border-bottom: 2px solid #2e2e2e;
 	z-index: 2;
-	box-shadow: 0px 0px 30px #33ff52;
+	box-shadow: 0px 0px 30px #34aeeb;
+	animation: paused;
+	transition: background-color 0.2s
 }
 
 #site_bar:hover {
@@ -25,7 +27,7 @@ body {
 	background-color: #5e5e5e;
 	width: 100%;
 	border-bottom: 2px solid #2e2e2e;
-	box-shadow: 0px 0px 30px #33ff52;
+	box-shadow: 0px 0px 30px #34aeeb;
 	cursor: pointer;
 }
 
@@ -37,13 +39,13 @@ body {
 
 #site_bar_text_x {
 	color: #ffffff;
+	transition: color 0.2s;
 }
 
-@keyframes x_x{
-	0%{color: #ffffff;}
-	50%{color: #000000;}
-	100%{color: #ffffff;}
+#site_bar_text_x:hover {
+	color: #000000;
 }
+
 
 /*BackGround*/
 
@@ -77,7 +79,8 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	box-shadow: 0px 0px 30px #33ff52;
+	box-shadow: 0px 0px 30px #34aeeb;
+	animation: paused;
 }
 
 #main_img {
@@ -136,7 +139,7 @@ body {
 	left: 15px;
 	outline: none;
 	transform: scale(1.1);
-	box-shadow: 0px 0px 10px #33ff52;
+	box-shadow: 0px 0px 10px #34aeeb;
 	cursor: pointer;
 }
 
@@ -171,7 +174,7 @@ body {
 	left: 95px;
 	outline: none;
 	transform: scale(1.1);
-	box-shadow: 0px 0px 10px #33ff52;
+	box-shadow: 0px 0px 10px #34aeeb;
 	cursor: pointer;
 }
 
@@ -206,7 +209,7 @@ body {
 	left: 175px;
 	outline: none;
 	transform: scale(1.1);
-	box-shadow: 0px 0px 10px #33ff52;
+	box-shadow: 0px 0px 10px #34aeeb;
 	cursor: pointer;
 }
 
@@ -237,7 +240,17 @@ body {
 
 
 
-/*	  (Hi!) 
+
+
+
+
+
+
+
+
+
+/*
+	  (Hi!) 
  {\__/}	 /
  ( o_o)
  ( >< )
