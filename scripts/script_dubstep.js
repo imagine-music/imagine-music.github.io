@@ -18,11 +18,12 @@ function play() {
 		play_pause = 0;
 		song.pause();
 		play_img.src = "images/player/play.png";
+
 	}
 }
 
 function next() {
-	if (currentSong < 6) {
+	if (currentSong < 7) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 	
@@ -75,7 +76,7 @@ function next() {
 		}
 
 		else if (currentSong == 4) {
-			song_name_text.innerHTML = "Teminite, MDK - Space Invaders";
+			song_name_text.innerHTML = "Teminite & MDK - Space Invaders";
 			bg_img.src = "images/posters/teminite_mdk_space_invaders.jpg";
 			main_img.src = "images/posters/teminite_mdk_space_invaders.jpg";
 			song.src = "audios/dubstep/teminite_mdk_space_invaders.mp3";
@@ -111,6 +112,22 @@ function next() {
 			bg_img.src = "images/posters/knife_party_sleaze.jpg";
 			main_img.src = "images/posters/knife_party_sleaze.jpg";
 			song.src = "audios/dubstep/knife_party_sleaze.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 7) {
+			song_name_text.innerHTML = "Amidst - Voices";
+			bg_img.src = "images/posters/amidst_voices.jpg";
+			main_img.src = "images/posters/amidst_voices.jpg";
+			song.src = "audios/dubstep/amidst_voices.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
@@ -194,7 +211,7 @@ function prev() {
 		}
 
 		else if (currentSong == 4) {
-			song_name_text.innerHTML = "Teminite, MDK - Space Invaders";
+			song_name_text.innerHTML = "Teminite & MDK - Space Invaders";
 			bg_img.src = "images/posters/teminite_mdk_space_invaders.jpg";
 			main_img.src = "images/posters/teminite_mdk_space_invaders.jpg";
 			song.src = "audios/dubstep/teminite_mdk_space_invaders.mp3";
@@ -214,6 +231,22 @@ function prev() {
 			bg_img.src = "images/posters/skrillex_must_die_vips.jpg";
 			main_img.src = "images/posters/skrillex_must_die_vips.jpg";
 			song.src = "audios/dubstep/skrillex_must_die_vips.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 6) {
+			song_name_text.innerHTML = "Knife Party - Sleaze";
+			bg_img.src = "images/posters/knife_party_sleaze.jpg";
+			main_img.src = "images/posters/knife_party_sleaze.jpg";
+			song.src = "audios/dubstep/knife_party_sleaze.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
