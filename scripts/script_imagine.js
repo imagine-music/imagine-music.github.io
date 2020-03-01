@@ -22,7 +22,7 @@ function play() {
 }
 
 function next() {
-	if (currentSong < 6) {
+	if (currentSong < 7) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 	
@@ -111,6 +111,22 @@ function next() {
 			bg_img.src = "images/posters/glude_breathe.jpg";
 			main_img.src = "images/posters/glude_breathe.jpg";
 			song.src = "audios/songs/glude_breathe.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 7) {
+			song_name_text.innerHTML = "Tobu & Syndec - Dusk";
+			bg_img.src = "images/posters/tobu_syndec_dusk.jpg";
+			main_img.src = "images/posters/tobu_syndec_dusk.jpg";
+			song.src = "audios/songs/tobu_syndec_dusk.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
@@ -214,6 +230,22 @@ function prev() {
 			bg_img.src = "images/posters/elektronomia_summersong_2018.jpg";
 			main_img.src = "images/posters/elektronomia_summersong_2018.jpg";
 			song.src = "audios/songs/elektronomia_summersong_2018.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 100 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 6) {
+			song_name_text.innerHTML = "Glude - Breathe";
+			bg_img.src = "images/posters/glude_breathe.jpg";
+			main_img.src = "images/posters/glude_breathe.jpg";
+			song.src = "audios/songs/glude_breathe.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
