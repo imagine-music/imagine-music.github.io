@@ -10,7 +10,7 @@ function play() {
 
 		song.addEventListener("timeupdate", function() {
 		var position = song.currentTime / song.duration;
-		song_bar_progress.style.width = position * 100 + "%";
+		song_bar_progress.style.width = position * 92 + "%";
 		})
 	}
 
@@ -36,7 +36,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 
 			play_pause++;
@@ -52,7 +52,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -68,7 +68,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -84,7 +84,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -100,7 +100,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -116,7 +116,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -132,7 +132,7 @@ function next() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -155,7 +155,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -171,7 +171,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -187,7 +187,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -203,7 +203,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -219,7 +219,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -235,7 +235,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
@@ -251,7 +251,7 @@ function prev() {
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 100 + "%";
+			song_bar_progress.style.width = position * 92 + "%";
 			})
 			
 			play_pause++;
