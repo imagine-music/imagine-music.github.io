@@ -236,7 +236,7 @@ body {
 
 #song_bar_progress {
 	background-color: #ff9e36;
-	width: 0px;
+	width: 0%;
 	height: 10px;
 	border-radius: 10px;
 	position: absolute;
