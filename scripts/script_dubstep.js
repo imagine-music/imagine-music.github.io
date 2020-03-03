@@ -11,14 +11,19 @@ function play() {
 		song.addEventListener("timeupdate", function() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
-		preparation();
 		})
+
+		site_bar.style.animation = "faded 1.5s infinite";
+		main.style.animation = "faded 1.5s infinite";
 	}
 
 	else if (play_pause > 1) {
 		play_pause = 0;
 		song.pause();
 		play_img.src = "images/player/play.png";
+
+		site_bar.style.animation = "paused";
+		main.style.animation = "paused";
 
 	}
 }
@@ -27,6 +32,9 @@ function next() {
 	if (currentSong < 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
+
+		site_bar.style.animation = "faded 1.5s infinite";
+		main.style.animation = "faded 1.5s infinite";
 	
 		if (currentSong == 1) {
 			song_name_text.innerHTML = "Crankdat - Redo";
@@ -178,6 +186,9 @@ function prev() {
 	if (currentSong >= 1) {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
+
+		site_bar.style.animation = "faded 1.5s infinite";
+		main.style.animation = "faded 1.5s infinite";
 		
 		if (currentSong == 0) {
 			song_name_text.innerHTML = "Carbin, Hairitage - Shake It";
