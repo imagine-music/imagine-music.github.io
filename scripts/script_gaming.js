@@ -12,6 +12,9 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 		})
+
+		site_bar.style.animation = "faded 1.5s infinite";
+		main.style.animation = "faded 1.5s infinite";
 	}
 
 	else if (play_pause > 1) {
@@ -19,6 +22,8 @@ function play() {
 		song.pause();
 		play_img.src = "images/player/play.png";
 
+		site_bar.style.animation = "paused";
+		main.style.animation = "paused";
 	}
 }
 
@@ -26,6 +31,9 @@ function next() {
 	if (currentSong < 7) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
+
+		site_bar.style.animation = "faded 1.5s infinite";
+		main.style.animation = "faded 1.5s infinite";
 	
 		if (currentSong == 1) {
 			song_name_text.innerHTML = "Spektrem - Shine";
@@ -145,6 +153,9 @@ function prev() {
 	if (currentSong >= 1) {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
+
+		site_bar.style.animation = "faded 1.5s infinite";
+		main.style.animation = "faded 1.5s infinite";
 		
 		if (currentSong == 0) {
 			song_name_text.innerHTML = "Max Brhon - Illusion";
