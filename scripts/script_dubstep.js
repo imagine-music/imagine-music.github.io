@@ -11,6 +11,7 @@ function play() {
 		song.addEventListener("timeupdate", function() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
+		preparation();
 		})
 	}
 
@@ -23,7 +24,7 @@ function play() {
 }
 
 function next() {
-	if (currentSong < 7) {
+	if (currentSong < 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 	
@@ -128,6 +129,38 @@ function next() {
 			bg_img.src = "images/posters/amidst_voices.jpg";
 			main_img.src = "images/posters/amidst_voices.jpg";
 			song.src = "audios/dubstep/amidst_voices.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 8) {
+			song_name_text.innerHTML = "Krewella - One Minute";
+			bg_img.src = "images/posters/krewella_one_minute.jpg";
+			main_img.src = "images/posters/krewella_one_minute.jpg";
+			song.src = "audios/dubstep/krewella_one_minute.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 9) {
+			song_name_text.innerHTML = "Midranger - Castle In The Sky";
+			bg_img.src = "images/posters/midranger_castle_in_the_sky.jpg";
+			main_img.src = "images/posters/midranger_castle_in_the_sky.jpg";
+			song.src = "audios/dubstep/midranger_castle_in_the_sky.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
@@ -247,6 +280,38 @@ function prev() {
 			bg_img.src = "images/posters/knife_party_sleaze.jpg";
 			main_img.src = "images/posters/knife_party_sleaze.jpg";
 			song.src = "audios/dubstep/knife_party_sleaze.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 7) {
+			song_name_text.innerHTML = "Amidst - Voices";
+			bg_img.src = "images/posters/amidst_voices.jpg";
+			main_img.src = "images/posters/amidst_voices.jpg";
+			song.src = "audios/dubstep/amidst_voices.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 8) {
+			song_name_text.innerHTML = "Krewella - One Minute";
+			bg_img.src = "images/posters/krewella_one_minute.jpg";
+			main_img.src = "images/posters/krewella_one_minute.jpg";
+			song.src = "audios/dubstep/krewella_one_minute.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
