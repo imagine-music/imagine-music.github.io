@@ -22,7 +22,7 @@ function play() {
 }
 
 function next() {
-	if (currentSong < 7) {
+	if (currentSong < 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 	
@@ -127,6 +127,38 @@ function next() {
 			bg_img.src = "images/posters/tobu_syndec_dusk.jpg";
 			main_img.src = "images/posters/tobu_syndec_dusk.jpg";
 			song.src = "audios/songs/tobu_syndec_dusk.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 8) {
+			song_name_text.innerHTML = "MOGUAI feat. CHEAT CODES - Hold On";
+			bg_img.src = "images/posters/moguai_feat_cheat_codes_hold_on.jpg";
+			main_img.src = "images/posters/moguai_feat_cheat_codes_hold_on.jpg";
+			song.src = "audios/songs/moguai_feat_cheat_codes_hold_on.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 9) {
+			song_name_text.innerHTML = "Galantis - Runaway (U & I)";
+			bg_img.src = "images/posters/galantis_runaway_u_&_i.jpg";
+			main_img.src = "images/posters/galantis_runaway_u_&_i.jpg";
+			song.src = "audios/songs/galantis_runaway_u_&_i.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
@@ -246,6 +278,38 @@ function prev() {
 			bg_img.src = "images/posters/glude_breathe.jpg";
 			main_img.src = "images/posters/glude_breathe.jpg";
 			song.src = "audios/songs/glude_breathe.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 7) {
+			song_name_text.innerHTML = "Tobu & Syndec - Dusk";
+			bg_img.src = "images/posters/tobu_syndec_dusk.jpg";
+			main_img.src = "images/posters/tobu_syndec_dusk.jpg";
+			song.src = "audios/songs/tobu_syndec_dusk.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 8) {
+			song_name_text.innerHTML = "MOGUAI feat. CHEAT CODES - Hold On";
+			bg_img.src = "images/posters/moguai_feat_cheat_codes_hold_on.jpg";
+			main_img.src = "images/posters/moguai_feat_cheat_codes_hold_on.jpg";
+			song.src = "audios/songs/moguai_feat_cheat_codes_hold_on.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
