@@ -33,14 +33,35 @@ function play() {
 }
 
 function next() {
+		
 	if (currentSong < 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
+		
+		if (currentSong == 0) {
+			song_name_text.innerHTML = "Carbin, Hairitage - Shake It";
+			bg_img.src = "images/posters/carbin_hairitage_shake_it.jpg";
+			main_img.src = "images/posters/carbin_hairitage_shake_it.jpg";
+			song.src = "audios/dubstep/carbin_hairitage_shake_it.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
 	
-		if (currentSong == 1) {
+		else if (currentSong == 1) {
 			song_name_text.innerHTML = "Crankdat - Redo";
 			bg_img.src = "images/posters/crankdat_redo.jpg";
 			main_img.src = "images/posters/crankdat_redo.jpg";
@@ -211,7 +232,8 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong == 9) {
+			currentSong = -1;
 			next();
 			}
 			})
