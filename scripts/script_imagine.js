@@ -33,12 +33,16 @@ function play() {
 
 function next() {
 		
-	    if (currentSong < 9) {
+	    if (currentSong <= 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
+
+		if (currentSong > 9) {
+			currentSong = 0;
+		}
 	
 	    if (currentSong == 0) {
 			song_name_text.innerHTML = "Savoy - Let You Go";
@@ -244,9 +248,14 @@ function next() {
 }
 
 function prev() {
-	if (currentSong >= 1) {
+	if (currentSong >= 0) {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
+
+		if (currentSong < 0) {
+			currentSong = 8;
+			next();
+		}
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
