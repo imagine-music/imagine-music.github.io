@@ -32,14 +32,35 @@ function play() {
 }
 
 function next() {
-	if (currentSong < 9) {
+		
+	    if (currentSong < 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 	
-		if (currentSong == 1) {
+	    if (currentSong == 0) {
+			song_name_text.innerHTML = "Savoy - Let You Go";
+			bg_img.src = "images/posters/savoy_let_you_go.jpg";
+			main_img.src = "images/posters/savoy_let_you_go.jpg";
+			song.src = "audios/songs/savoy_let_you_go.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+		
+		else if (currentSong == 1) {
 			song_name_text.innerHTML = "Rogue - Badlands";
 			bg_img.src = "images/posters/rogue_badlands.jpg";
 			main_img.src = "images/posters/rogue_badlands.jpg";
@@ -210,7 +231,8 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong == 9) {
+			currentSong = -1;
 			next();
 			}
 			})
