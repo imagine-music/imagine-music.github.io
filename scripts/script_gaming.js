@@ -32,14 +32,14 @@ function play() {
 }
 
 function next() {
-	if (currentSong <= 7) {
+	if (currentSong <= 9) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 7) {
+		if (currentSong > 9) {
 			currentSong = 0;
 		}
 	    
@@ -74,7 +74,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 7) {
+			if (song.ended && currentSong < 9) {
 			next();
 			}
 			})
@@ -94,7 +94,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 7) {
+			if (song.ended && currentSong < 9) {
 			next();
 			}
 			})
@@ -114,7 +114,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 7) {
+			if (song.ended && currentSong < 9) {
 			next();
 			}
 			})
@@ -134,7 +134,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 7) {
+			if (song.ended && currentSong < 9) {
 			next();
 			}
 			})
@@ -154,7 +154,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 7) {
+			if (song.ended && currentSong < 9) {
 			next();
 			}
 			})
@@ -174,7 +174,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 7) {
+			if (song.ended && currentSong < 9) {
 			next();
 			}
 			})
@@ -194,7 +194,47 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 7) {
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 8) {
+			song_name_text.innerHTML = "Half an Orange, Ephixa - Time Travel Kool Aid";
+			bg_img.src = "images/posters/half_an_orange_ephixa_time_travel_kool_aid.jpg";
+			main_img.src = "images/posters/half_an_orange_ephixa_time_travel_kool_aid.jpg";
+			song.src = "audios/gaming/half_an_orange_ephixa_time_travel_kool_aid.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 9) {
+			song_name_text.innerHTML = "Ship Wrek & Zookeepers - Ark";
+			bg_img.src = "images/posters/ship_wrek_zookeepers_ark.jpg";
+			main_img.src = "images/posters/ship_wrek_zookeepers_ark.jpg";
+			song.src = "audios/gaming/ship_wrek_zookeepers_ark.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 9) {
 			currentSong = -1;
 			next();
 			}
@@ -215,7 +255,7 @@ function prev() {
 		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong < 0) {
-			currentSong = 6;
+			currentSong = 8;
 			next();
 		}
 		
@@ -344,6 +384,46 @@ function prev() {
 			bg_img.src = "images/posters/more_plastic_champion.jpg";
 			main_img.src = "images/posters/more_plastic_champion.jpg";
 			song.src = "audios/gaming/more_plastic_champion.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 7) {
+			song_name_text.innerHTML = "K-391 - Sky";
+			bg_img.src = "images/posters/k_391_sky.jpg";
+			main_img.src = "images/posters/k_391_sky.jpg";
+			song.src = "audios/gaming/k_391_sky.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 8) {
+			song_name_text.innerHTML = "Half an Orange, Ephixa - Time Travel Kool Aid";
+			bg_img.src = "images/posters/half_an_orange_ephixa_time_travel_kool_aid.jpg";
+			main_img.src = "images/posters/half_an_orange_ephixa_time_travel_kool_aid.jpg";
+			song.src = "audios/gaming/half_an_orange_ephixa_time_travel_kool_aid.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
