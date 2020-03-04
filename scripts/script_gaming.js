@@ -32,12 +32,16 @@ function play() {
 }
 
 function next() {
-	if (currentSong < 7) {
+	if (currentSong <= 7) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
+
+		if (currentSong > 7) {
+			currentSong = 0;
+		}
 	    
 	    if (currentSong == 0) {
 			song_name_text.innerHTML = "Max Brhon - Illusion";
@@ -203,12 +207,17 @@ function next() {
 }
 
 function prev() {
-	if (currentSong >= 1) {
+	if (currentSong >= 0) {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
+
+		if (currentSong < 0) {
+			currentSong = 6;
+			next();
+		}
 		
 		if (currentSong == 0) {
 			song_name_text.innerHTML = "Max Brhon - Illusion";
