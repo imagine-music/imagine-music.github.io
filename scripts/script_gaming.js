@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 9) {
+		if (song.ended && currentSong < 7) {
 		next();
 		}
 		})
@@ -38,8 +38,28 @@ function next() {
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
-	
-		if (currentSong == 1) {
+	    
+	    if (currentSong == 0) {
+			song_name_text.innerHTML = "Max Brhon - Illusion";
+			bg_img.src = "images/posters/max_brhon_illusion.jpg";
+			main_img.src = "images/posters/max_brhon_illusion.jpg";
+			song.src = "audios/gaming/max_brhon_illusion.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 9) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+		
+		else if (currentSong == 1) {
 			song_name_text.innerHTML = "Spektrem - Shine";
 			bg_img.src = "images/posters/spektrem_shine.jpg";
 			main_img.src = "images/posters/spektrem_shine.jpg";
@@ -50,7 +70,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 7) {
 			next();
 			}
 			})
@@ -70,7 +90,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 7) {
 			next();
 			}
 			})
@@ -90,7 +110,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 7) {
 			next();
 			}
 			})
@@ -110,7 +130,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 7) {
 			next();
 			}
 			})
@@ -130,7 +150,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 7) {
 			next();
 			}
 			})
@@ -150,7 +170,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 7) {
 			next();
 			}
 			})
@@ -170,7 +190,8 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong == 7) {
+			currentSong = -1;
 			next();
 			}
 			})
