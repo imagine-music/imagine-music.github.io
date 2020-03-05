@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 7) {
+		if (song.ended && currentSong < 11) {
 		next();
 		}
 		})
@@ -32,14 +32,14 @@ function play() {
 }
 
 function next() {
-	if (currentSong <= 9) {
+	if (currentSong <= 11) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 9) {
+		if (currentSong > 11) {
 			currentSong = 0;
 		}
 	    
@@ -54,7 +54,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -74,7 +74,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -94,7 +94,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -114,7 +114,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -134,7 +134,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -154,7 +154,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -174,7 +174,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -194,7 +194,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -214,7 +214,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -234,7 +234,49 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 9) {
+			if (song.ended && currentSong == 11) {
+			currentSong = -1;
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 10) {
+			song_name_text.innerHTML = "BURNS - When I'm Around U";
+			bg_img.src = "images/posters/burns_when_im_around_u.jpg";
+			main_img.src = "images/posters/burns_when_im_around_u.jpg";
+			song.src = "audios/gaming/burns_when_im_around_u.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 11) {
+			currentSong = -1;
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 11) {
+			song_name_text.innerHTML = "INZO - Overthinker";
+			bg_img.src = "images/posters/inzo_overthinker.jpg";
+			main_img.src = "images/posters/inzo_overthinker.jpg";
+			song.src = "audios/gaming/inzo_overthinker.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 11) {
 			currentSong = -1;
 			next();
 			}
@@ -255,7 +297,7 @@ function prev() {
 		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong < 0) {
-			currentSong = 8;
+			currentSong = 10;
 			next();
 		}
 		
@@ -270,7 +312,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -290,7 +332,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -310,7 +352,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -330,7 +372,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -350,7 +392,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -370,7 +412,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -390,7 +432,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -410,7 +452,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -430,7 +472,49 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 9) {
+			song_name_text.innerHTML = "Ship Wrek & Zookeepers - Ark";
+			bg_img.src = "images/posters/ship_wrek_zookeepers_ark.jpg";
+			main_img.src = "images/posters/ship_wrek_zookeepers_ark.jpg";
+			song.src = "audios/gaming/ship_wrek_zookeepers_ark.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 11) {
+			currentSong = -1;
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 10) {
+			song_name_text.innerHTML = "BURNS - When I'm Around U";
+			bg_img.src = "images/posters/burns_when_im_around_u.jpg";
+			main_img.src = "images/posters/burns_when_im_around_u.jpg";
+			song.src = "audios/gaming/burns_when_im_around_u.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 11) {
+			currentSong = -1;
 			next();
 			}
 			})
