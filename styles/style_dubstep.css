@@ -47,7 +47,6 @@ body {
 	color: #f02b2b;
 }
 
-
 /*BackGround*/
 
 #bg {
@@ -77,9 +76,9 @@ body {
 	height: 320px;
 	background-color: #2e2e2e;
 	border-radius: 10px 10px 10px 10px;
-	top: 50%;
+	top: 35%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -35%);
 	box-shadow: 0px 0px 30px #f02b2b;
 	animation: paused;
 }
@@ -235,7 +234,7 @@ body {
 }
 
 #song_bar_progress {
-	background-color: #f02b2b;
+	background-color: #f02b2b;;
 	width: 0%;
 	height: 10px;
 	border-radius: 10px;
@@ -243,6 +242,27 @@ body {
 	left: 11px;
 	top: 215px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes faded {
 	0%{box-shadow: 0px 0px 30px #f02b2b;}
@@ -259,7 +279,6 @@ body {
 	75%{box-shadow: 0px 0px 5px #f02b2b;}
 	100%{box-shadow: 0px 0px 10px #f02b2b;}
 }
-
 
 
 
