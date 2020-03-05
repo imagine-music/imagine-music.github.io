@@ -266,7 +266,7 @@ function next() {
 		}
 
 		else if (currentSong == 11) {
-			song_name_text.innerHTML = "Razihel - Come And Get It (Razihel Remix)";
+			song_name_text.innerHTML = "Krewella - Come And Get It (Razihel Remix)";
 			bg_img.src = "images/posters/razihel_come_and_get_it.jpg";
 			main_img.src = "images/posters/razihel_come_and_get_it.jpg";
 			song.src = "audios/dubstep/razihel_come_and_get_it.mp3";
