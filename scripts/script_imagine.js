@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 9) {
+		if (song.ended && currentSong < 11) {
 		next();
 		}
 		})
@@ -33,14 +33,14 @@ function play() {
 
 function next() {
 		
-	    if (currentSong <= 9) {
+	    if (currentSong <= 11) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 9) {
+		if (currentSong > 11) {
 			currentSong = 0;
 		}
 	
@@ -55,7 +55,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -75,7 +75,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -95,7 +95,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -115,7 +115,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -135,7 +135,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -175,7 +175,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -195,7 +195,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -215,7 +215,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -235,7 +235,47 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 9) {
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 10) {
+			song_name_text.innerHTML = "Marshmello - Moving On";
+			bg_img.src = "images/posters/marshmello_moving_on.jpg";
+			main_img.src = "images/posters/marshmello_moving_on.jpg";
+			song.src = "audios/songs/marshmello_moving_on.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 11) {
+			song_name_text.innerHTML = "Ooyy - Tei";
+			bg_img.src = "images/posters/ooyy_tei.jpg";
+			main_img.src = "images/posters/ooyy_tei.jpg";
+			song.src = "audios/songs/ooyy_tei.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 11) {
 			currentSong = -1;
 			next();
 			}
@@ -253,7 +293,7 @@ function prev() {
 		play_img.src = "images/player/pause.png";
 
 		if (currentSong < 0) {
-			currentSong = 8;
+			currentSong = 10;
 			next();
 		}
 
@@ -271,7 +311,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -291,7 +331,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -311,7 +351,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -331,7 +371,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -351,7 +391,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -371,7 +411,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -391,7 +431,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -411,7 +451,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -431,7 +471,47 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 9) {
+			song_name_text.innerHTML = "Galantis - Runaway (U & I)";
+			bg_img.src = "images/posters/galantis_runaway_u_&_i.jpg";
+			main_img.src = "images/posters/galantis_runaway_u_&_i.jpg";
+			song.src = "audios/songs/galantis_runaway_u_&_i.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 10) {
+			song_name_text.innerHTML = "Marshmello - Moving On";
+			bg_img.src = "images/posters/marshmello_moving_on.jpg";
+			main_img.src = "images/posters/marshmello_moving_on.jpg";
+			song.src = "audios/songs/marshmello_moving_on.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
