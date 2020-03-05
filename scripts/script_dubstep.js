@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 9) {
+		if (song.ended && currentSong < 11) {
 			next();
 		}
 		})
@@ -34,14 +34,14 @@ function play() {
 
 function next() {
 		
-	if (currentSong <= 9) {
+	if (currentSong <= 11) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 9) {
+		if (currentSong > 11) {
 			currentSong = 0;
 		}
 		
@@ -56,7 +56,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -76,7 +76,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -96,7 +96,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -116,7 +116,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -136,7 +136,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -156,7 +156,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -176,7 +176,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -196,7 +196,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -216,7 +216,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -236,7 +236,47 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 9) {
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 10) {
+			song_name_text.innerHTML = "Skrillex - Bangarang (feat. Sirah)";
+			bg_img.src = "images/posters/skrillex_bangarang.jpg";
+			main_img.src = "images/posters/skrillex_bangarang.jpg";
+			song.src = "audios/dubstep/skrillex_bangarang.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 11) {
+			song_name_text.innerHTML = "Razihel - Come And Get It (Razihel Remix)";
+			bg_img.src = "images/posters/razihel_come_and_get_it.jpg";
+			main_img.src = "images/posters/razihel_come_and_get_it.jpg";
+			song.src = "audios/dubstep/razihel_come_and_get_it.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 11) {
 			currentSong = -1;
 			next();
 			}
@@ -257,7 +297,7 @@ function prev() {
 		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong < 0) {
-			currentSong = 8;
+			currentSong = 10;
 			next();
 		}
 		
@@ -272,7 +312,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -292,7 +332,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -312,7 +352,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -332,7 +372,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -352,7 +392,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -372,7 +412,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -392,7 +432,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -412,7 +452,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
@@ -432,7 +472,47 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 9) {
+			song_name_text.innerHTML = "Midranger - Castle In The Sky";
+			bg_img.src = "images/posters/midranger_castle_in_the_sky.jpg";
+			main_img.src = "images/posters/midranger_castle_in_the_sky.jpg";
+			song.src = "audios/dubstep/midranger_castle_in_the_sky.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 11) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 10) {
+			song_name_text.innerHTML = "Skrillex - Bangarang (feat. Sirah)";
+			bg_img.src = "images/posters/skrillex_bangarang.jpg";
+			main_img.src = "images/posters/skrillex_bangarang.jpg";
+			song.src = "audios/dubstep/skrillex_bangarang.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 11) {
 			next();
 			}
 			})
