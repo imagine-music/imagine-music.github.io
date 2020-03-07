@@ -530,8 +530,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 13) {
-			currentSong = -1;
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -545,6 +544,66 @@ function prev() {
 			bg_img.src = "images/posters/burns_when_im_around_u.jpg";
 			main_img.src = "images/posters/burns_when_im_around_u.jpg";
 			song.src = "audios/gaming/burns_when_im_around_u.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 11) {
+			song_name_text.innerHTML = "INZO - Overthinker";
+			bg_img.src = "images/posters/inzo_overthinker.jpg";
+			main_img.src = "images/posters/inzo_overthinker.jpg";
+			song.src = "audios/gaming/inzo_overthinker.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 12) {
+			song_name_text.innerHTML = "Max Brhon - Cyberpunk";
+			bg_img.src = "images/posters/max_brhon_cyberpunk.jpg";
+			main_img.src = "images/posters/max_brhon_cyberpunk.jpg";
+			song.src = "audios/gaming/max_brhon_cyberpunk.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 13) {
+			song_name_text.innerHTML = "THYKIER - 51";
+			bg_img.src = "images/posters/thykier_51.jpg";
+			main_img.src = "images/posters/thykier_51.jpg";
+			song.src = "audios/gaming/thykier_51.mp3";
 			play_img.src = "images/player/pause.png";
 
 			song.addEventListener("timeupdate", function() {
