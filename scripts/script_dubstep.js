@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 11) {
+		if (song.ended && currentSong < 13) {
 			next();
 		}
 		})
@@ -34,14 +34,14 @@ function play() {
 
 function next() {
 		
-	if (currentSong <= 11) {
+	if (currentSong <= 13) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 11) {
+		if (currentSong > 13) {
 			currentSong = 0;
 		}
 		
@@ -56,7 +56,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -76,7 +76,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -96,7 +96,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -116,7 +116,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -136,7 +136,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -156,7 +156,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -176,7 +176,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -196,7 +196,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -216,7 +216,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -236,7 +236,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -256,7 +256,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -276,7 +276,47 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 12) {
+			song_name_text.innerHTML = "Zixtone - Safari";
+			bg_img.src = "images/posters/zixtone_safari.jpg";
+			main_img.src = "images/posters/zixtone_safari.jpg";
+			song.src = "audios/dubstep/zixtone_safari.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 13) {
+			song_name_text.innerHTML = "Jaroslav Beck - $100 Bills";
+			bg_img.src = "images/posters/jaroslav_beck_100_bills.jpg";
+			main_img.src = "images/posters/jaroslav_beck_100_bills.jpg";
+			song.src = "audios/dubstep/jaroslav_beck_100_bills.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 13) {
 			currentSong = -1;
 			next();
 			}
@@ -297,7 +337,7 @@ function prev() {
 		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong < 0) {
-			currentSong = 10;
+			currentSong = 12;
 			next();
 		}
 		
@@ -312,7 +352,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -332,7 +372,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -352,7 +392,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -372,7 +412,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -392,7 +432,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -412,7 +452,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -432,7 +472,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -452,7 +492,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -472,7 +512,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -492,7 +532,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -512,7 +552,47 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 11) {
+			song_name_text.innerHTML = "Krewella - Come And Get It (Razihel Remix)";
+			bg_img.src = "images/posters/razihel_come_and_get_it.jpg";
+			main_img.src = "images/posters/razihel_come_and_get_it.jpg";
+			song.src = "audios/dubstep/razihel_come_and_get_it.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 12) {
+			song_name_text.innerHTML = "Zixtone - Safari";
+			bg_img.src = "images/posters/zixtone_safari.jpg";
+			main_img.src = "images/posters/zixtone_safari.jpg";
+			song.src = "audios/dubstep/zixtone_safari.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
