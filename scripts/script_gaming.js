@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 11) {
+		if (song.ended && currentSong < 13) {
 		next();
 		}
 		})
@@ -32,14 +32,14 @@ function play() {
 }
 
 function next() {
-	if (currentSong <= 11) {
+	if (currentSong <= 13) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 11) {
+		if (currentSong > 13) {
 			currentSong = 0;
 		}
 	    
@@ -54,7 +54,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -74,7 +74,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -94,7 +94,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -114,7 +114,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -134,7 +134,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -154,7 +154,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -174,7 +174,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -194,7 +194,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -214,7 +214,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -234,8 +234,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
-			currentSong = -1;
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -255,8 +254,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
-			currentSong = -1;
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -276,7 +274,47 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 12) {
+			song_name_text.innerHTML = "Max Brhon - Cyberpunk";
+			bg_img.src = "images/posters/max_brhon_cyberpunk.jpg";
+			main_img.src = "images/posters/max_brhon_cyberpunk.jpg";
+			song.src = "audios/gaming/max_brhon_cyberpunk.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 13) {
+			song_name_text.innerHTML = "THYKIER - 51";
+			bg_img.src = "images/posters/thykier_51.jpg";
+			main_img.src = "images/posters/thykier_51.jpg";
+			song.src = "audios/gaming/thykier_51.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 13) {
 			currentSong = -1;
 			next();
 			}
@@ -297,7 +335,7 @@ function prev() {
 		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong < 0) {
-			currentSong = 10;
+			currentSong = 12;
 			next();
 		}
 		
@@ -312,7 +350,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -332,7 +370,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -352,7 +390,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -372,7 +410,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -392,7 +430,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -412,7 +450,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -432,7 +470,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -452,7 +490,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -472,7 +510,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -492,7 +530,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
+			if (song.ended && currentSong == 13) {
 			currentSong = -1;
 			next();
 			}
@@ -513,7 +551,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
+			if (song.ended && currentSong == 13) {
 			currentSong = -1;
 			next();
 			}
