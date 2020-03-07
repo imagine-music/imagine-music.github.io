@@ -12,7 +12,7 @@ function play() {
 		var position = song.currentTime / song.duration;
 		song_bar_progress.style.width = position * 92 + "%";
 
-		if (song.ended && currentSong < 11) {
+		if (song.ended && currentSong < 13) {
 		next();
 		}
 		})
@@ -33,14 +33,14 @@ function play() {
 
 function next() {
 		
-	    if (currentSong <= 11) {
+	    if (currentSong <= 13) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
 
 		site_bar.style.animation = "faded 1.5s infinite";
 		main.style.animation = "faded 1.5s infinite";
 
-		if (currentSong > 11) {
+		if (currentSong > 13) {
 			currentSong = 0;
 		}
 	
@@ -55,7 +55,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -75,7 +75,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -95,7 +95,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -115,7 +115,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -135,7 +135,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -155,7 +155,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 9) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -175,7 +175,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -195,7 +195,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -215,7 +215,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -235,7 +235,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -255,7 +255,7 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -275,7 +275,47 @@ function next() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong == 11) {
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 12) {
+			song_name_text.innerHTML = "Alan Walker - Alone";
+			bg_img.src = "images/posters/alan_walker_alone.jpg";
+			main_img.src = "images/posters/alan_walker_alone.jpg";
+			song.src = "audios/songs/alan_walker_alone.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 13) {
+			song_name_text.innerHTML = "Laszlo - Closer";
+			bg_img.src = "images/posters/laszlo_closer.jpg";
+			main_img.src = "images/posters/laszlo_closer.jpg";
+			song.src = "audios/songs/laszlo_closer.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong == 13) {
 			currentSong = -1;
 			next();
 			}
@@ -293,7 +333,7 @@ function prev() {
 		play_img.src = "images/player/pause.png";
 
 		if (currentSong < 0) {
-			currentSong = 10;
+			currentSong = 12;
 			next();
 		}
 
@@ -311,7 +351,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -331,7 +371,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -351,7 +391,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -371,7 +411,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -391,7 +431,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -411,7 +451,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -431,7 +471,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -451,7 +491,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -471,7 +511,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -491,7 +531,7 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
@@ -511,7 +551,47 @@ function prev() {
 			var position = song.currentTime / song.duration;
 			song_bar_progress.style.width = position * 92 + "%";
 
-			if (song.ended && currentSong < 11) {
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 11) {
+			song_name_text.innerHTML = "Ooyy - Tei";
+			bg_img.src = "images/posters/ooyy_tei.jpg";
+			main_img.src = "images/posters/ooyy_tei.jpg";
+			song.src = "audios/songs/ooyy_tei.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
+			next();
+			}
+			})
+			
+			play_pause++;
+			song.play();
+		}
+
+		else if (currentSong == 12) {
+			song_name_text.innerHTML = "Alan Walker - Alone";
+			bg_img.src = "images/posters/alan_walker_alone.jpg";
+			main_img.src = "images/posters/alan_walker_alone.jpg";
+			song.src = "audios/songs/alan_walker_alone.mp3";
+			play_img.src = "images/player/pause.png";
+
+			song.addEventListener("timeupdate", function() {
+			var position = song.currentTime / song.duration;
+			song_bar_progress.style.width = position * 92 + "%";
+
+			if (song.ended && currentSong < 13) {
 			next();
 			}
 			})
