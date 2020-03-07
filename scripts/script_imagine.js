@@ -599,26 +599,5 @@ function prev() {
 			play_pause++;
 			song.play();
 		}
-
-		else if (currentSong == 13) {
-			song_name_text.innerHTML = "Laszlo - Closer";
-			bg_img.src = "images/posters/laszlo_closer.jpg";
-			main_img.src = "images/posters/laszlo_closer.jpg";
-			song.src = "audios/songs/laszlo_closer.mp3";
-			play_img.src = "images/player/pause.png";
-
-			song.addEventListener("timeupdate", function() {
-			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 92 + "%";
-
-			if (song.ended && currentSong == 13) {
-			currentSong = -1;
-			next();
-			}
-			})
-			
-			play_pause++;
-			song.play();
-		}
 	}
 }
