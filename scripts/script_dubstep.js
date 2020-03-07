@@ -600,26 +600,5 @@ function prev() {
 			play_pause++;
 			song.play();
 		}
-
-		else if (currentSong == 13) {
-			song_name_text.innerHTML = "Jaroslav Beck - $100 Bills";
-			bg_img.src = "images/posters/jaroslav_beck_100_bills.jpg";
-			main_img.src = "images/posters/jaroslav_beck_100_bills.jpg";
-			song.src = "audios/dubstep/jaroslav_beck_100_bills.mp3";
-			play_img.src = "images/player/pause.png";
-
-			song.addEventListener("timeupdate", function() {
-			var position = song.currentTime / song.duration;
-			song_bar_progress.style.width = position * 92 + "%";
-
-			if (song.ended && currentSong == 13) {
-			currentSong = -1;
-			next();
-			}
-			})
-			
-			play_pause++;
-			song.play();
-		}
 	}
 }
