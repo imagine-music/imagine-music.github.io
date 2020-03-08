@@ -16,18 +16,12 @@ function play() {
 		next();
 		}
 		})
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 	}
 
 	else if (play_pause > 1) {
 		play_pause = 0;
 		song.pause();
 		play_img.src = "images/player/play.png";
-
-		site_bar.style.animation = "paused";
-		main.style.animation = "paused";
 	}
 }
 
@@ -35,9 +29,6 @@ function next() {
 	if (currentSong <= 13) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong > 13) {
 			currentSong = 0;
@@ -49,6 +40,7 @@ function next() {
 			main_img.src = "images/posters/max_brhon_illusion.jpg";
 			song.src = "audios/gaming/max_brhon_illusion.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Max Brhon - Illusion";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -69,6 +61,7 @@ function next() {
 			main_img.src = "images/posters/spektrem_shine.jpg";
 			song.src = "audios/gaming/spektrem_shine.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Spektrem - Shine";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -89,6 +82,7 @@ function next() {
 			main_img.src = "images/posters/dnmo_sub_urban_sick_of_you.jpg";
 			song.src = "audios/gaming/dnmo_sub_urban_sick_of_you.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | DNMO, Sub Urban - Sick Of You";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -109,6 +103,7 @@ function next() {
 			main_img.src = "images/posters/gunnar_olsen_first_to_last.jpg";
 			song.src = "audios/gaming/gunnar_olsen_first_to_last.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Gunnar Olsen - First To Last";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -129,6 +124,7 @@ function next() {
 			main_img.src = "images/posters/thykier_the_limit.jpg";
 			song.src = "audios/gaming/thykier_the_limit.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | THYKIER - THE LIMIT";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -149,6 +145,7 @@ function next() {
 			main_img.src = "images/posters/jauz_ephwurd_rock_the_party.jpg";
 			song.src = "audios/gaming/jauz_ephwurd_rock_the_party.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Jauz & Ephwurd - Rock The Party";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -169,6 +166,7 @@ function next() {
 			main_img.src = "images/posters/more_plastic_champion.jpg";
 			song.src = "audios/gaming/more_plastic_champion.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | More Plastic - Champion";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -189,6 +187,7 @@ function next() {
 			main_img.src = "images/posters/k_391_sky.jpg";
 			song.src = "audios/gaming/k_391_sky.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | K-391 - Sky";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -209,6 +208,7 @@ function next() {
 			main_img.src = "images/posters/half_an_orange_ephixa_time_travel_kool_aid.jpg";
 			song.src = "audios/gaming/half_an_orange_ephixa_time_travel_kool_aid.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Half an Orange, Ephixa - Time Travel Kool Aid";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -229,6 +229,7 @@ function next() {
 			main_img.src = "images/posters/ship_wrek_zookeepers_ark.jpg";
 			song.src = "audios/gaming/ship_wrek_zookeepers_ark.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Ship Wrek & Zookeepers - Ark";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -249,6 +250,7 @@ function next() {
 			main_img.src = "images/posters/burns_when_im_around_u.jpg";
 			song.src = "audios/gaming/burns_when_im_around_u.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | BURNS - When I'm Around U";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -269,6 +271,7 @@ function next() {
 			main_img.src = "images/posters/inzo_overthinker.jpg";
 			song.src = "audios/gaming/inzo_overthinker.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | INZO - Overthinker";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -289,6 +292,7 @@ function next() {
 			main_img.src = "images/posters/max_brhon_cyberpunk.jpg";
 			song.src = "audios/gaming/max_brhon_cyberpunk.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Max Brhon - Cyberpunk";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -309,6 +313,7 @@ function next() {
 			main_img.src = "images/posters/thykier_51.jpg";
 			song.src = "audios/gaming/thykier_51.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | THYKIER - 51";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -331,9 +336,6 @@ function prev() {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
 
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
-
 		if (currentSong < 0) {
 			currentSong = 12;
 			next();
@@ -345,6 +347,7 @@ function prev() {
 			main_img.src = "images/posters/max_brhon_illusion.jpg";
 			song.src = "audios/gaming/max_brhon_illusion.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Max Brhon - Illusion";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -365,6 +368,7 @@ function prev() {
 			main_img.src = "images/posters/spektrem_shine.jpg";
 			song.src = "audios/gaming/spektrem_shine.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Spektrem - Shine";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -385,6 +389,7 @@ function prev() {
 			main_img.src = "images/posters/dnmo_sub_urban_sick_of_you.jpg";
 			song.src = "audios/gaming/dnmo_sub_urban_sick_of_you.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | DNMO, Sub Urban - Sick Of You";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -405,6 +410,7 @@ function prev() {
 			main_img.src = "images/posters/gunnar_olsen_first_to_last.jpg";
 			song.src = "audios/gaming/gunnar_olsen_first_to_last.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Gunnar Olsen - First To Last";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -425,6 +431,7 @@ function prev() {
 			main_img.src = "images/posters/thykier_the_limit.jpg";
 			song.src = "audios/gaming/thykier_the_limit.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | THYKIER - THE LIMIT";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -445,6 +452,7 @@ function prev() {
 			main_img.src = "images/posters/jauz_ephwurd_rock_the_party.jpg";
 			song.src = "audios/gaming/jauz_ephwurd_rock_the_party.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Jauz & Ephwurd - Rock The Party";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -465,6 +473,7 @@ function prev() {
 			main_img.src = "images/posters/more_plastic_champion.jpg";
 			song.src = "audios/gaming/more_plastic_champion.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | More Plastic - Champion";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -485,6 +494,7 @@ function prev() {
 			main_img.src = "images/posters/k_391_sky.jpg";
 			song.src = "audios/gaming/k_391_sky.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | K-391 - Sky";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -505,6 +515,7 @@ function prev() {
 			main_img.src = "images/posters/half_an_orange_ephixa_time_travel_kool_aid.jpg";
 			song.src = "audios/gaming/half_an_orange_ephixa_time_travel_kool_aid.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Half an Orange, Ephixa - Time Travel Kool Aid";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -525,6 +536,7 @@ function prev() {
 			main_img.src = "images/posters/ship_wrek_zookeepers_ark.jpg";
 			song.src = "audios/gaming/ship_wrek_zookeepers_ark.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Ship Wrek & Zookeepers - Ark";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -545,6 +557,7 @@ function prev() {
 			main_img.src = "images/posters/burns_when_im_around_u.jpg";
 			song.src = "audios/gaming/burns_when_im_around_u.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | BURNS - When I'm Around U";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -565,6 +578,7 @@ function prev() {
 			main_img.src = "images/posters/inzo_overthinker.jpg";
 			song.src = "audios/gaming/inzo_overthinker.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | INZO - Overthinker";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -585,6 +599,7 @@ function prev() {
 			main_img.src = "images/posters/max_brhon_cyberpunk.jpg";
 			song.src = "audios/gaming/max_brhon_cyberpunk.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "GAMING | Max Brhon - Cyberpunk";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
