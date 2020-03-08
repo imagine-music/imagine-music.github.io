@@ -13,20 +13,20 @@ body {
 
 #site_bar {
 	position: absolute;
-	background-color: #4d4d4d;
+	background-color: #242424;
 	width: 100%;
-	border-bottom: 2px solid #2e2e2e;
+	border-bottom: 2px solid #f02b2b;
 	z-index: 2;
-	box-shadow: 0px 0px 30px #f02b2b;
 	animation: paused;
-	transition: background-color 0.2s
+	transition: background-color 0.2s;
+	box-shadow: 0px 0px 30px #f02b2b;
 }
 
 #site_bar:hover {
 	position: absolute;
-	background-color: #5e5e5e;
+	background-color: #303030;
 	width: 100%;
-	border-bottom: 2px solid #2e2e2e;
+	border-bottom: 2px solid #f02b2b;
 	box-shadow: 0px 0px 30px #f02b2b;
 	cursor: pointer;
 }
@@ -74,13 +74,14 @@ body {
 	z-index: 3;
 	width: 250px;
 	height: 320px;
-	background-color: #2e2e2e;
+	background-color: #242424;
 	border-radius: 10px 10px 10px 10px;
 	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -35%);
 	box-shadow: 0px 0px 30px #f02b2b;
 	animation: paused;
+	border: 2px solid #f02b2b;
 }
 
 #main_img {
@@ -116,7 +117,7 @@ body {
 }
 
 #prev {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	position: absolute;
 	z-index: 7;
 	width: 60px;
@@ -130,7 +131,7 @@ body {
 }
 
 #prev:hover {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	position: absolute;
 	z-index: 7;
 	width: 60px;
@@ -151,7 +152,7 @@ body {
 }
 
 #play {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	position: absolute;
 	z-index: 7;
 	width: 60px;
@@ -165,7 +166,7 @@ body {
 }
 
 #play:hover {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	position: absolute;
 	z-index: 7;
 	width: 60px;
@@ -186,7 +187,7 @@ body {
 }
 
 #next {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	position: absolute;
 	z-index: 7;
 	width: 60px;
@@ -200,7 +201,7 @@ body {
 }
 
 #next:hover {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	position: absolute;
 	z-index: 7;
 	width: 60px;
