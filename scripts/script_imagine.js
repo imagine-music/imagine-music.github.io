@@ -16,18 +16,12 @@ function play() {
 		next();
 		}
 		})
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 	}
 
 	else if (play_pause > 1) {
 		play_pause = 0;
 		song.pause();
 		play_img.src = "images/player/play.png";
-
-		site_bar.style.animation = "paused";
-		main.style.animation = "paused";
 	}
 }
 
@@ -36,9 +30,6 @@ function next() {
 	    if (currentSong <= 13) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong > 13) {
 			currentSong = 0;
@@ -50,6 +41,7 @@ function next() {
 			main_img.src = "images/posters/savoy_let_you_go.jpg";
 			song.src = "audios/songs/savoy_let_you_go.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Savoy - Let You Go";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -70,6 +62,7 @@ function next() {
 			main_img.src = "images/posters/rogue_badlands.jpg";
 			song.src = "audios/songs/rogue_badlands.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Rogue - Badlands";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -90,6 +83,7 @@ function next() {
 			main_img.src = "images/posters/alan_walker_faded.jpg";
 			song.src = "audios/songs/alan_walker_faded.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Alan Walker - Faded";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -110,6 +104,7 @@ function next() {
 			main_img.src = "images/posters/coopex_over_the_sun.jpg";
 			song.src = "audios/songs/coopex_over_the_sun.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Coopex - Over The Sun";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -130,6 +125,7 @@ function next() {
 			main_img.src = "images/posters/marshmello_imagine.jpg";
 			song.src = "audios/songs/marshmello_imagine.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Marshmello - Imagine";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -150,6 +146,7 @@ function next() {
 			main_img.src = "images/posters/elektronomia_summersong_2018.jpg";
 			song.src = "audios/songs/elektronomia_summersong_2018.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Elektronomia - Summersong 2018";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -170,6 +167,7 @@ function next() {
 			main_img.src = "images/posters/glude_breathe.jpg";
 			song.src = "audios/songs/glude_breathe.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Glude - Breathe";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -190,6 +188,7 @@ function next() {
 			main_img.src = "images/posters/tobu_syndec_dusk.jpg";
 			song.src = "audios/songs/tobu_syndec_dusk.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Tobu & Syndec - Dusk";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -210,6 +209,7 @@ function next() {
 			main_img.src = "images/posters/moguai_feat_cheat_codes_hold_on.jpg";
 			song.src = "audios/songs/moguai_feat_cheat_codes_hold_on.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | MOGUAI feat. CHEAT CODES - Hold On";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -230,6 +230,7 @@ function next() {
 			main_img.src = "images/posters/galantis_runaway_u_&_i.jpg";
 			song.src = "audios/songs/galantis_runaway_u_&_i.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Galantis - Runaway (U & I)";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -250,6 +251,7 @@ function next() {
 			main_img.src = "images/posters/marshmello_moving_on.jpg";
 			song.src = "audios/songs/marshmello_moving_on.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Marshmello - Moving On";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -270,6 +272,7 @@ function next() {
 			main_img.src = "images/posters/ooyy_tei.jpg";
 			song.src = "audios/songs/ooyy_tei.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Ooyy - Tei";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -290,6 +293,7 @@ function next() {
 			main_img.src = "images/posters/alan_walker_alone.jpg";
 			song.src = "audios/songs/alan_walker_alone.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Alan Walker - Alone";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -310,6 +314,7 @@ function next() {
 			main_img.src = "images/posters/laszlo_closer.jpg";
 			song.src = "audios/songs/laszlo_closer.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Laszlo - Closer";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -336,9 +341,6 @@ function prev() {
 			currentSong = 12;
 			next();
 		}
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 		
 		if (currentSong == 0) {
 			song_name_text.innerHTML = "Savoy - Let You Go";
@@ -346,6 +348,7 @@ function prev() {
 			main_img.src = "images/posters/savoy_let_you_go.jpg";
 			song.src = "audios/songs/savoy_let_you_go.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Savoy - Let You Go";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -366,6 +369,7 @@ function prev() {
 			main_img.src = "images/posters/rogue_badlands.jpg";
 			song.src = "audios/songs/rogue_badlands.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Rogue - Badlands";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -386,6 +390,7 @@ function prev() {
 			main_img.src = "images/posters/alan_walker_faded.jpg";
 			song.src = "audios/songs/alan_walker_faded.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Alan Walker - Faded";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -406,6 +411,7 @@ function prev() {
 			main_img.src = "images/posters/coopex_over_the_sun.jpg";
 			song.src = "audios/songs/coopex_over_the_sun.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Coopex - Over The Sun";
 			
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -426,6 +432,7 @@ function prev() {
 			main_img.src = "images/posters/marshmello_imagine.jpg";
 			song.src = "audios/songs/marshmello_imagine.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Marshmello - Imagine";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -446,6 +453,7 @@ function prev() {
 			main_img.src = "images/posters/elektronomia_summersong_2018.jpg";
 			song.src = "audios/songs/elektronomia_summersong_2018.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Elektronomia - Summersong 2018";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -466,6 +474,7 @@ function prev() {
 			main_img.src = "images/posters/glude_breathe.jpg";
 			song.src = "audios/songs/glude_breathe.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Glude - Breathe";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -486,6 +495,7 @@ function prev() {
 			main_img.src = "images/posters/tobu_syndec_dusk.jpg";
 			song.src = "audios/songs/tobu_syndec_dusk.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Tobu & Syndec - Dusk";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -506,6 +516,7 @@ function prev() {
 			main_img.src = "images/posters/moguai_feat_cheat_codes_hold_on.jpg";
 			song.src = "audios/songs/moguai_feat_cheat_codes_hold_on.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | MOGUAI feat. CHEAT CODES - Hold On";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -526,6 +537,7 @@ function prev() {
 			main_img.src = "images/posters/galantis_runaway_u_&_i.jpg";
 			song.src = "audios/songs/galantis_runaway_u_&_i.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Galantis - Runaway (U & I)";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -546,6 +558,7 @@ function prev() {
 			main_img.src = "images/posters/marshmello_moving_on.jpg";
 			song.src = "audios/songs/marshmello_moving_on.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Marshmello - Moving On";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -566,6 +579,7 @@ function prev() {
 			main_img.src = "images/posters/ooyy_tei.jpg";
 			song.src = "audios/songs/ooyy_tei.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Ooyy - Tei";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -586,6 +600,7 @@ function prev() {
 			main_img.src = "images/posters/alan_walker_alone.jpg";
 			song.src = "audios/songs/alan_walker_alone.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "IMAGINE | Alan Walker - Alone";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
