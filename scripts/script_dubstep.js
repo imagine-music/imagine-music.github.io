@@ -16,19 +16,12 @@ function play() {
 			next();
 		}
 		})
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 	}
 
 	else if (play_pause > 1) {
 		play_pause = 0;
 		song.pause();
 		play_img.src = "images/player/play.png";
-
-		site_bar.style.animation = "paused";
-		main.style.animation = "paused";
-
 	}
 }
 
@@ -37,9 +30,6 @@ function next() {
 	if (currentSong <= 13) {
 		currentSong++;
 		play_img.src = "images/player/pause.png";
-
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
 
 		if (currentSong > 13) {
 			currentSong = 0;
@@ -51,6 +41,7 @@ function next() {
 			main_img.src = "images/posters/carbin_hairitage_shake_it.jpg";
 			song.src = "audios/dubstep/carbin_hairitage_shake_it.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Carbin, Hairitage - Shake It";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -71,6 +62,7 @@ function next() {
 			main_img.src = "images/posters/crankdat_redo.jpg";
 			song.src = "audios/dubstep/crankdat_redo.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Crankdat - Redo";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -91,6 +83,7 @@ function next() {
 			main_img.src = "images/posters/knife_party_bonfire.jpg";
 			song.src = "audios/dubstep/knife_party_bonfire.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Knife Party - Bonfire";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -111,6 +104,7 @@ function next() {
 			main_img.src = "images/posters/n3ÜrØ_virus.jpg";
 			song.src = "audios/dubstep/n3ÜrØ_virus.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | N3ÜRØ - VIRUS";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -131,6 +125,7 @@ function next() {
 			main_img.src = "images/posters/teminite_mdk_space_invaders.jpg";
 			song.src = "audios/dubstep/teminite_mdk_space_invaders.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Teminite & MDK - Space Invaders";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -151,6 +146,7 @@ function next() {
 			main_img.src = "images/posters/skrillex_must_die_vips.jpg";
 			song.src = "audios/dubstep/skrillex_must_die_vips.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Skrillex, MUST DIE! - VIPs";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -171,6 +167,7 @@ function next() {
 			main_img.src = "images/posters/knife_party_sleaze.jpg";
 			song.src = "audios/dubstep/knife_party_sleaze.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Knife Party - Sleaze";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -191,6 +188,7 @@ function next() {
 			main_img.src = "images/posters/amidst_voices.jpg";
 			song.src = "audios/dubstep/amidst_voices.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Amidst - Voices";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -211,6 +209,7 @@ function next() {
 			main_img.src = "images/posters/krewella_one_minute.jpg";
 			song.src = "audios/dubstep/krewella_one_minute.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Krewella - One Minute";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -231,6 +230,7 @@ function next() {
 			main_img.src = "images/posters/midranger_castle_in_the_sky.jpg";
 			song.src = "audios/dubstep/midranger_castle_in_the_sky.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Midranger - Castle In The Sky";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -251,6 +251,7 @@ function next() {
 			main_img.src = "images/posters/skrillex_bangarang.jpg";
 			song.src = "audios/dubstep/skrillex_bangarang.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Skrillex - Bangarang (feat. Sirah)";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -271,6 +272,7 @@ function next() {
 			main_img.src = "images/posters/razihel_come_and_get_it.jpg";
 			song.src = "audios/dubstep/razihel_come_and_get_it.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Krewella - Come And Get It (Razihel Remix)";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -291,6 +293,7 @@ function next() {
 			main_img.src = "images/posters/zixtone_safari.jpg";
 			song.src = "audios/dubstep/zixtone_safari.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Zixtone - Safari";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -311,6 +314,7 @@ function next() {
 			main_img.src = "images/posters/jaroslav_beck_100_bills.jpg";
 			song.src = "audios/dubstep/jaroslav_beck_100_bills.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Jaroslav Beck - $100 Bills";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -333,9 +337,6 @@ function prev() {
 		currentSong--;
 		play_img.src = "images/player/pause.png";
 
-		site_bar.style.animation = "faded 1.5s infinite";
-		main.style.animation = "faded 1.5s infinite";
-
 		if (currentSong < 0) {
 			currentSong = 12;
 			next();
@@ -347,6 +348,7 @@ function prev() {
 			main_img.src = "images/posters/carbin_hairitage_shake_it.jpg";
 			song.src = "audios/dubstep/carbin_hairitage_shake_it.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Carbin, Hairitage - Shake It";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -367,6 +369,7 @@ function prev() {
 			main_img.src = "images/posters/crankdat_redo.jpg";
 			song.src = "audios/dubstep/crankdat_redo.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Crankdat - Redo";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -387,6 +390,7 @@ function prev() {
 			main_img.src = "images/posters/knife_party_bonfire.jpg";
 			song.src = "audios/dubstep/knife_party_bonfire.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Knife Party - Bonfire";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -407,6 +411,7 @@ function prev() {
 			main_img.src = "images/posters/n3ÜrØ_virus.jpg";
 			song.src = "audios/dubstep/n3ÜrØ_virus.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | N3ÜRØ - VIRUS";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -427,6 +432,7 @@ function prev() {
 			main_img.src = "images/posters/teminite_mdk_space_invaders.jpg";
 			song.src = "audios/dubstep/teminite_mdk_space_invaders.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Teminite & MDK - Space Invaders";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -447,6 +453,7 @@ function prev() {
 			main_img.src = "images/posters/skrillex_must_die_vips.jpg";
 			song.src = "audios/dubstep/skrillex_must_die_vips.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Skrillex, MUST DIE! - VIPs";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -467,6 +474,7 @@ function prev() {
 			main_img.src = "images/posters/knife_party_sleaze.jpg";
 			song.src = "audios/dubstep/knife_party_sleaze.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Knife Party - Sleaze";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -487,6 +495,7 @@ function prev() {
 			main_img.src = "images/posters/amidst_voices.jpg";
 			song.src = "audios/dubstep/amidst_voices.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Amidst - Voices";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -507,6 +516,7 @@ function prev() {
 			main_img.src = "images/posters/krewella_one_minute.jpg";
 			song.src = "audios/dubstep/krewella_one_minute.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Krewella - One Minute";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -527,6 +537,7 @@ function prev() {
 			main_img.src = "images/posters/midranger_castle_in_the_sky.jpg";
 			song.src = "audios/dubstep/midranger_castle_in_the_sky.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Midranger - Castle In The Sky";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -547,6 +558,7 @@ function prev() {
 			main_img.src = "images/posters/skrillex_bangarang.jpg";
 			song.src = "audios/dubstep/skrillex_bangarang.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Skrillex - Bangarang (feat. Sirah)";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -567,6 +579,7 @@ function prev() {
 			main_img.src = "images/posters/razihel_come_and_get_it.jpg";
 			song.src = "audios/dubstep/razihel_come_and_get_it.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Krewella - Come And Get It (Razihel Remix)";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
@@ -587,6 +600,7 @@ function prev() {
 			main_img.src = "images/posters/zixtone_safari.jpg";
 			song.src = "audios/dubstep/zixtone_safari.mp3";
 			play_img.src = "images/player/pause.png";
+			title.innerHTML = "DUBSTEP | Zixtone - Safari";
 
 			song.addEventListener("timeupdate", function() {
 			var position = song.currentTime / song.duration;
