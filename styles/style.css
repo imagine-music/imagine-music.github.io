@@ -13,20 +13,20 @@ body {
 
 #site_bar {
 	position: absolute;
-	background-color: #4d4d4d;
+	background-color: #242424;
 	width: 100%;
-	border-bottom: 2px solid #2e2e2e;
+	border-bottom: 2px solid #ffffff;
 	z-index: 2;
-	box-shadow: 0px 0px 30px #34aeeb;
 	animation: paused;
-	transition: background-color 0.2s
+	transition: background-color 0.2s;
+	box-shadow: 0px 0px 30px #34aeeb;
 }
 
 #site_bar:hover {
 	position: absolute;
-	background-color: #5e5e5e;
+	background-color: #303030;
 	width: 100%;
-	border-bottom: 2px solid #2e2e2e;
+	border-bottom: 2px solid #ffffff;
 	box-shadow: 0px 0px 30px #34aeeb;
 	cursor: pointer;
 }
@@ -65,7 +65,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 1;
+	z-index: 0;
 }
 
 /*SongChange*/
@@ -78,16 +78,17 @@ body {
 	left: 50%;
 	transform: translate(-50%, 0%);
 	width: 280px;
-	height: 170px;
-	background-color: #2e2e2e;
+	height: 182px;
+	background-color: #242424;
 	box-shadow: 0px 0px 30px #34aeeb;
 	border-radius: 10px;
+	border: 2px solid #ffffff;
 }
 
 
 /*Song Var style*/
 #song_style_box {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	margin: 10px;
 	border-radius: 10px;
 	transition: background-color 0.2s;
@@ -108,10 +109,11 @@ body {
 }
 
 #song_style_box_imag {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	margin: 10px;
 	border-radius: 10px;
 	transition: background-color 0.2s;
+	border: 2px solid #34aeeb;
 }
 
 #song_style_box_imag:hover {
@@ -123,10 +125,11 @@ body {
 }
 
 #song_style_box_dub {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	margin: 10px;
 	border-radius: 10px;
 	transition: background-color 0.2s;
+	border: 2px solid #f02b2b;
 }
 
 #song_style_box_dub:hover {
@@ -138,10 +141,11 @@ body {
 }
 
 #song_style_box_game {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	margin: 10px;
 	border-radius: 10px;
 	transition: background-color 0.2s;
+	border: 2px solid #ff9e36;
 }
 
 #song_style_box_game:hover {
@@ -159,19 +163,21 @@ body {
 	left: 50%;
 	transform: translate(-50%, 0%);
 	width: 280px;
-	height: 120px;
-	background-color: #2e2e2e;
+	height: 125px;
+	background-color: #242424;
 	box-shadow: 0px 0px 30px #34aeeb;
 	border-radius: 10px;
 	margin-bottom: 20px;
 	margin-right: 10px;
+	border: 2px solid #ffffff;
 }
 
 #vk {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	margin: 10px;
 	border-radius: 10px;
 	transition: background-color 0.2s;
+	border: 2px solid #4269f5;
 }
 
 #vk:hover {
@@ -182,10 +188,11 @@ body {
 }
 
 #inst {
-	background-color: #2e2e2e;
+	background-color: #242424;
 	margin: 10px;
 	border-radius: 10px;
 	transition: background-color 0.2s;
+	border: 2px solid #f542ec;
 }
 
 #inst:hover {
